@@ -1,0 +1,22 @@
+# Exemplos de Entradas Binárias para Testar a Aplicação Bin2Dec
+
+# Formato: <entrada binária> = <resultado decimal>
+
+00000001 = 1
+00000010 = 2
+00000100 = 4
+00001000 = 8
+00010000 = 16
+00100000 = 32
+01000000 = 64
+10000000 = 128
+11111111 = 255
+
+# Exemplos adicionais
+
+00000000 = 0
+00100101 = 37
+01010101 = 85
+01101100 = 108
+10101010 = 170
+11001100 = 204

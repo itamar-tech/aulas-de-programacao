@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec Aula 01</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px; /* Ajustado para uma altura fixa em pixels */
+            background-color: #e0f7fa;
+            margin: 0;
+        }
+        .calculator {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .calculator h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #00796b;
+        }
+        .calculator input {
+            font-size: 24px;
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 24px);
+            border: 2px solid #00796b;
+            border-radius: 5px;
+            outline: none;
+        }
+        .calculator button {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        .calculator button:hover {
+            background-color: #004d40;
+        }
+        .calculator #result {
+            font-size: 32px;
+            margin-top: 20px;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Bin2Dec</h1>
+        <input type="text" id="binaryInput" placeholder="Digite um número binário">
+        <button onclick="convertToDecimal()">Converter</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function convertToDecimal() {
+            const binaryInput = document.getElementById('binaryInput').value;
+            const resultElement = document.getElementById('result');
+        
+            // Validar a entrada para garantir que contenha apenas 0's e 1's
+            // Expressão regular /^[01]{1,8}$/ explicação:
+            // ^      - indica o início da string
+            // [01]   - permite apenas os caracteres '0' e '1'
+            // {1,8}  - especifica que a string deve ter entre 1 e 8 caracteres
+            // $      - indica o fim da string
+            if (/^[01]{1,8}$/.test(binaryInput)) {
+                // Calcular o equivalente decimal
+                const decimalValue = parseInt(binaryInput, 2);
+                resultElement.textContent = `Decimal: ${decimalValue}`;
+            } else {
+                resultElement.textContent = 'Por favor, insira um número binário válido (apenas 0 ou 1).';
+            }
+        }
+    </script>
+</body>
+</html>
