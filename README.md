@@ -4,7 +4,7 @@ Este repositório contém uma série de aulas sobre programação. Cada aula est
 
 ## Aulas Disponíveis
 
-1. [Aula 1 - Bin2Dec](./Aula%201%20-%20Bin2Dec)
+1. [Aula 1 - Bin2Dec](/Aula%201/Bin2Dec)
 
 
 ## Como Usar
