@@ -4,8 +4,8 @@ Este repositório contém uma série de aulas sobre programação. Cada aula est
 
 ## Aulas Disponíveis
 
-1. [Aula 1 - Bin2Dec](/Aula%201/Bin2Dec) - Video aula no youtube  - https://www.youtube.com/watch?v=SBlnrsM_TIg
-
+1. [Aula 1 - Bin2Dec](/Aula%201/Bin2Dec) - Video aula no youtube - [YouTube](https://www.youtube.com/watch?v=SBlnrsM_TIg)
+2. [Aula 2 - Calculator](/Aula%202/Calculator) - Video aula no youtube - [YouTube](https://www.youtube.com/@itamar-tech)
 
 ## Como Usar
 
