@@ -141,7 +141,7 @@ Crie uma aplicação web que permita ao usuário realizar operações matemátic
 
 Boa sorte e divirta-se com o desafio!
 
----
+
 
 🔗 **Links Importantes:**
 
@@ -150,11 +150,6 @@ Boa sorte e divirta-se com o desafio!
 - 💻 [GitHub](https://github.com/itamar-tech/aulas-de-programacao)
 - 📺 [YouTube](https://www.youtube.com/@itamar-tech)
 
----
 
-**#ProgramaçãoParaIniciantes #CalculadoraJavaScript #ProjetosPráticos #ItamarTech #AprenderProgramação #DesafioDeProgramação #InterfaceDeUsuário #DesenvolvimentoWeb**' > README.md
+**#ProgramaçãoParaIniciantes #CalculadoraJavaScript #ProjetosPráticos #ItamarTech #AprenderProgramação #DesafioDeProgramação #InterfaceDeUsuário #DesenvolvimentoWeb**'
 
-# Adicionar, commitar e enviar as alterações para o repositório remoto
-git add .
-git commit -m "Adiciona Aula 2 - Calculator com README e arquivos iniciais"
-git push origin main
