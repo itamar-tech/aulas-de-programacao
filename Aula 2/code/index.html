@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <title>CALC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Calculadora Básica</title>
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="visor">
-            <div id="accumulator" class="acc"></div>
-            <div id="total" class="total" hidden></div>
+    <div class="header">
+        <div class="title-links">
+            <h1>Aula 2 - Calculadora Básica</h1>
+            <div class="links">
+                <a href="https://github.com/itamar-tech" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/itamar-junior-92965216b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/itamar_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@itamar-tech" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-        <div class="numeric action" onclick="CleanAll()">C</div>
-        <div class="numeric action" onclick="CleanCurrentEntry()">CE</div>
-        <div class="numeric action" onclick="Percentage()">%</div>
-        <div class="numeric action" onclick="CalcAction('/')">/</div>
-        <div class="numeric" onclick="AddNumber(7)">7</div>
-        <div class="numeric" onclick="AddNumber(8)">8</div>
-        <div class="numeric" onclick="AddNumber(9)">9</div>
-        <div class="numeric action" onclick="CalcAction('x')">x</div>
-        <div class="numeric" onclick="AddNumber(4)">4</div>
-        <div class="numeric" onclick="AddNumber(5)">5</div>
-        <div class="numeric" onclick="AddNumber(6)">6</div>
-        <div class="numeric action" onclick="CalcAction('-')">-</div>
-        <div class="numeric" onclick="AddNumber(1)">1</div>
-        <div class="numeric" onclick="AddNumber(2)">2</div>
-        <div class="numeric" onclick="AddNumber(3)">3</div>
-        <div class="numeric action" onclick="CalcAction('+')">+</div>
-        <div class="numeric zero" onclick="AddNumber(0)">0</div>
-        <div class="numeric" onclick="AddComma()">,</div>
-        <div class="numeric action result" onclick="Result()">=</div>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleTheme()">
+                <span class="slider round">
+                    <span class="icon sun">☀️</span>
+                    <span class="icon moon">🌙</span>
+                </span>
+            </label>
+        </div>
+    </div>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="visor">
+                <div id="accumulator" class="acc"></div>
+                <div id="total" class="total" hidden></div>
+            </div>
+            <div class="numeric action" onclick="CleanAll()">AC</div>
+            <div class="numeric action" onclick="CleanCurrentEntry()">C</div>
+            <div class="numeric action" onclick="Percentage()">%</div>
+            <div class="numeric action" onclick="CalcAction('/')">/</div>
+            <div class="numeric" onclick="AddNumber(7)">7</div>
+            <div class="numeric" onclick="AddNumber(8)">8</div>
+            <div class="numeric" onclick="AddNumber(9)">9</div>
+            <div class="numeric action" onclick="CalcAction('x')">x</div>
+            <div class="numeric" onclick="AddNumber(4)">4</div>
+            <div class="numeric" onclick="AddNumber(5)">5</div>
+            <div class="numeric" onclick="AddNumber(6)">6</div>
+            <div class="numeric action" onclick="CalcAction('-')">-</div>
+            <div class="numeric" onclick="AddNumber(1)">1</div>
+            <div class="numeric" onclick="AddNumber(2)">2</div>
+            <div class="numeric" onclick="AddNumber(3)">3</div>
+            <div class="numeric action" onclick="CalcAction('+')">+</div>
+            <div class="numeric zero" onclick="AddNumber(0)">0</div>
+            <div class="numeric" onclick="AddComma()">.</div>
+            <div class="numeric action result" onclick="Result()">=</div>
+        </div>
     </div>
 
 
-    <div class="footer">
-        <p>developed with bugs by <a href="https://github.com/x0uter" target="_blank">x0uter</a></p>
-    </div>
-
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-
+<footer>
+    <p>Desenvolvido por <a href="https://github.com/itamar-tech" target="_blank">Itamar Tech</a></p>
+    <a href="https://www.linkedin.com/in/itamar-junior-92965216b/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
+    <a href="https://www.instagram.com/itamar_tech/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a> |
+    <a href="https://www.youtube.com/@itamar-tech" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
+</footer>
 </html>
