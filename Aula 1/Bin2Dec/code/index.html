@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 800px; /* Ajustado para uma altura fixa em pixels */
+            height: 800px; 
             background-color: #e0f7fa;
             margin: 0;
         }
@@ -22,7 +22,7 @@
             text-align: center;
             width: 300px;
         }
-        .calculator h1 {
+        .calculator h2 {
             margin-bottom: 20px;
             font-size: 24px;
             color: #00796b;
@@ -58,7 +58,7 @@
 </head>
 <body>
     <div class="calculator">
-        <h1>Bin2Dec</h1>
+        <h2>Bin2Dec</h2>
         <input type="text" id="binaryInput" placeholder="Digite um número binário">
         <button onclick="convertToDecimal()">Converter</button>
         <div id="result"></div>
@@ -75,8 +75,14 @@
             // [01]   - permite apenas os caracteres '0' e '1'
             // {1,8}  - especifica que a string deve ter entre 1 e 8 caracteres
             // $      - indica o fim da string
+            // .test() é um método de expressão regular em JavaScript que verifica se uma string corresponde ao padrão da expressão regular
+            // Retorna true se a string corresponder, e false caso contrário
             if (/^[01]{1,8}$/.test(binaryInput)) {
-                // Calcular o equivalente decimal
+                 // Calcular o equivalente decimal
+                // parseInt(binaryInput, 2) explicação:
+                // parseInt é uma função que converte uma string em um número inteiro
+                // O segundo argumento '2' indica que a string está em base 2 (binária)
+                // Portanto, parseInt('1010', 2) converte a string binária '1010' para o número decimal 10
                 const decimalValue = parseInt(binaryInput, 2);
                 resultElement.textContent = `Decimal: ${decimalValue}`;
             } else {
