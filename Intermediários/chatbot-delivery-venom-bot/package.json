@@ -1,0 +1,11 @@
+{
+  "name": "botvendas",
+  "version": "1.0.0",
+  "description": " chat bot para delivery",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon run dev"
+  },
+  "author": "itamar junior",
+  "license": "ISC"
+}
