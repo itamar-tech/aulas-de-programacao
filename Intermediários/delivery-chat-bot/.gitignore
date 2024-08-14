@@ -1,0 +1,75 @@
+# Node.js
+
+# Diretórios e arquivos de dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diretórios de ambiente
+.env
+.env.test
+.env.production
+
+# Sistema de arquivos operacionais
+.DS_Store
+Thumbs.db
+
+# Diretórios de builds e pacotes
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# Diretórios de IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swm
+
+# Configurações e dependências de containers
+docker-compose.override.yml
+docker-compose.local.yml
+.Dockerfile
+
+# Diretórios e arquivos de testes
+__tests__/
+__mocks__/
+coverage/
+.nyc_output/
+jest-config.js
+cypress/
+cypress.json
+test-results/
+.vscode-test/
+
+# Configurações específicas de sistema
+*.local
+*.lock
+
+# Sentry environment files
+.sentryclirc
+
+# Configurações de pacotes
+package-lock.json
+yarn.lock
+
+# Arquivos temporários e backup
+*.bak
+*.tmp
+*.temp
+*.log
+
+# Editorconfig
+.editorconfig
